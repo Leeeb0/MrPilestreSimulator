@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SceneRecapEmotionnelActivity">
+
+    <TextView
+        android:id="@+id/tvQuestionRecap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="En repensant à ta journée, comment te sens-tu?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnSatisfait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Satisfait"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_emoticons"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMitige"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionRecap" />
+
+    <TextView
+        android:id="@+id/tvLabelSatisfait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Satisfait"
+        app:layout_constraintTop_toBottomOf="@+id/btnSatisfait"
+        app:layout_constraintStart_toStartOf="@+id/btnSatisfait"
+        app:layout_constraintEnd_toEndOf="@+id/btnSatisfait"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnMitige"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Mitigé"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSatisfait"
+        app:layout_constraintEnd_toStartOf="@+id/btnEpuise"
+        app:layout_constraintStart_toEndOf="@+id/btnSatisfait"
+        app:layout_constraintTop_toTopOf="@+id/btnSatisfait" />
+
+    <TextView
+        android:id="@+id/tvLabelMitige"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mitigé"
+        app:layout_constraintTop_toBottomOf="@+id/btnMitige"
+        app:layout_constraintStart_toStartOf="@+id/btnMitige"
+        app:layout_constraintEnd_toEndOf="@+id/btnMitige"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnEpuise"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Épuisé"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_report_image"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSatisfait"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMitige"
+        app:layout_constraintTop_toTopOf="@+id/btnSatisfait" />
+
+    <TextView
+        android:id="@+id/tvLabelEpuise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Épuisé"
+        app:layout_constraintTop_toBottomOf="@+id/btnEpuise"
+        app:layout_constraintStart_toStartOf="@+id/btnEpuise"
+        app:layout_constraintEnd_toEndOf="@+id/btnEpuise"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

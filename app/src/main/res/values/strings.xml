@@ -17,4 +17,10 @@
         <item>Réseaux sociaux (Bonheur +5, Énergie -5)</item>
         <item>Lecture (Compétences +5)</item>
     </string-array>
+
+    <string-array name="diner_options">
+        <item>Pizza surgelée (Santé -5, Bonheur +5, Argent -8)</item>
+        <item>Salade maison (Santé +10, Énergie +5, Argent -5)</item>
+        <item>Restaurant (Bonheur +10, Santé +5, Argent -20)</item>
+    </string-array>
 </resources>

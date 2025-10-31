@@ -11,15 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MrPilestreSimulator">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".SceneReveilActivity" android:exported="false" />
+        <activity android:name=".SceneHygieneActivity" android:exported="false" />
+        <activity android:name=".SceneNotificationActivity" android:exported="false" />
+        <activity android:name=".ScenePetitDejeunerActivity" android:exported="false" />
+        <activity android:name=".SceneTransportActivity" android:exported="false" />
+        <activity android:name=".SceneMeteoActivity" android:exported="false" />
+        <activity android:name=".SceneTacheImprevueActivity" android:exported="false" />
+        <activity android:name=".ScenePauseDetenteActivity" android:exported="false" />
+        <activity android:name=".SceneMidiActivity" android:exported="false" />
+        <activity android:name=".SceneApresMidiActivity" android:exported="false" />
+        <activity android:name=".SceneCorveeActivity" android:exported="false" />
+        <activity android:name=".SceneHasardActivity" android:exported="false" />
+        <activity android:name=".SceneSoirActivity" android:exported="false" />
+        <activity android:name=".SceneDinerActivity" android:exported="false" />
+        <activity android:name=".SceneSommeilActivity" android:exported="false" />
+        <activity android:name=".SceneRecapEmotionnelActivity" android:exported="false" />
+
+        <activity android:name=".BilanActivity" android:exported="false" />
+
     </application>
 
 </manifest>

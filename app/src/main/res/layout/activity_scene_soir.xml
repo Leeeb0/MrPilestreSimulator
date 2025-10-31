@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SceneSoirActivity">
+
+    <TextView
+        android:id="@+id/tvQuestionSoir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="La journée touche à sa fin. Comment choisis-tu de te détendre ?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnJeuxVideo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Jeux vidéo"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_media_play"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLire"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionSoir" />
+
+    <TextView
+        android:id="@+id/tvLabelJeuxVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jeux vidéo"
+        app:layout_constraintTop_toBottomOf="@+id/btnJeuxVideo"
+        app:layout_constraintStart_toStartOf="@+id/btnJeuxVideo"
+        app:layout_constraintEnd_toEndOf="@+id/btnJeuxVideo"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnLire"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Lire"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_agenda"
+        app:layout_constraintBottom_toBottomOf="@+id/btnJeuxVideo"
+        app:layout_constraintEnd_toStartOf="@+id/btnSport"
+        app:layout_constraintStart_toEndOf="@+id/btnJeuxVideo"
+        app:layout_constraintTop_toTopOf="@+id/btnJeuxVideo" />
+
+    <TextView
+        android:id="@+id/tvLabelLire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lire"
+        app:layout_constraintTop_toBottomOf="@+id/btnLire"
+        app:layout_constraintStart_toStartOf="@+id/btnLire"
+        app:layout_constraintEnd_toEndOf="@+id/btnLire"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnSport"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Sport"
+        android:scaleType="fitCenter"
+
+        app:srcCompat="@android:drawable/ic_menu_compass"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btnJeuxVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLire"
+        app:layout_constraintTop_toTopOf="@+id/btnJeuxVideo" />
+
+    <TextView
+        android:id="@+id/tvLabelSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport"
+        app:layout_constraintTop_toBottomOf="@+id/btnSport"
+        app:layout_constraintStart_toStartOf="@+id/btnSport"
+        app:layout_constraintEnd_toEndOf="@+id/btnSport"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
