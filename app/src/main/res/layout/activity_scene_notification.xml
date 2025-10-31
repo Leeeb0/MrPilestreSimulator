@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SceneNotificationActivity">
+
+    <TextView
+        android:id="@+id/tvQuestionNotification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Une notification inattendue s'affiche sur ton téléphone. Que contient-elle ?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnInvitation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Invitation"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMauvaiseNouvelle"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionNotification" />
+
+    <TextView
+        android:id="@+id/tvLabelInvitation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invitation"
+        app:layout_constraintTop_toBottomOf="@+id/btnInvitation"
+        app:layout_constraintStart_toStartOf="@+id/btnInvitation"
+        app:layout_constraintEnd_toEndOf="@+id/btnInvitation"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnMauvaiseNouvelle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Mauvaise nouvelle"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_dialog_alert"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInvitation"
+        app:layout_constraintEnd_toStartOf="@+id/btnRien"
+        app:layout_constraintStart_toEndOf="@+id/btnInvitation"
+        app:layout_constraintTop_toTopOf="@+id/btnInvitation" />
+
+    <TextView
+        android:id="@+id/tvLabelMauvaiseNouvelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mauvaise nouvelle"
+        app:layout_constraintTop_toBottomOf="@+id/btnMauvaiseNouvelle"
+        app:layout_constraintStart_toStartOf="@+id/btnMauvaiseNouvelle"
+        app:layout_constraintEnd_toEndOf="@+id/btnMauvaiseNouvelle"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/btnRien"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Rien"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInvitation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMauvaiseNouvelle"
+        app:layout_constraintTop_toTopOf="@+id/btnInvitation" />
+
+    <TextView
+        android:id="@+id/tvLabelRien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rien"
+        app:layout_constraintTop_toBottomOf="@+id/btnRien"
+        app:layout_constraintStart_toStartOf="@+id/btnRien"
+        app:layout_constraintEnd_toEndOf="@+id/btnRien"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MrPilestreSimulator</string>
+    <string name="suivant">Suivant</string>
+    <string name="la_nuit_s_ach_ve_comment_as_tu_dormi">La nuit s’achève… Comment as-tu dormi ?</string>
+    <string name="mal">Mal</string>
+    <string name="insomnie">Insomnie</string>
+    <string name="tr_s_bien">Très bien</string>
+
+    <string-array name="petit_dejeuner_options">
+        <item>Rien (Énergie -10, Santé -5)</item>
+        <item>Café/croissant (Énergie +5, Santé -2, Argent -5)</item>
+        <item>Repas équilibré (Énergie +10, Santé +10, Argent -10)</item>
+    </string-array>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SceneReveilActivity">
+
+    <TextView
+        android:id="@+id/tvQuestionReveil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ton réveil sonne. Quelle est ta réaction ?"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <RadioGroup
+        android:id="@+id/wakeUpGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionReveil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <RadioButton
+            android:id="@+id/rbSnooze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dormir 15 min de plus (Énergie +5, Retard +1)" />
+
+        <RadioButton
+            android:id="@+id/rbGetUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se lever direct (Énergie -5, Discipline +1)" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextSceneReveil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
