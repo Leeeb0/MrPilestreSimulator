@@ -11,4 +11,10 @@
         <item>Café/croissant (Énergie +5, Santé -2, Argent -5)</item>
         <item>Repas équilibré (Énergie +10, Santé +10, Argent -10)</item>
     </string-array>
+
+    <string-array name="pause_detente_options">
+        <item>Sieste (Énergie +10)</item>
+        <item>Réseaux sociaux (Bonheur +5, Énergie -5)</item>
+        <item>Lecture (Compétences +5)</item>
+    </string-array>
 </resources>
