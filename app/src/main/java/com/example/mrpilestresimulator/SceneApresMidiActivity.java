@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.SeekBar; // <-- On utilise un SeekBar
+import android.widget.SeekBar;
 import android.widget.Toast;
 
 public class SceneApresMidiActivity extends AppCompatActivity {
@@ -17,7 +17,7 @@ public class SceneApresMidiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_apres_midi);
 
         // 2. Récupérer l'objet joueur
@@ -35,10 +35,9 @@ public class SceneApresMidiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // 5. Récupérer la valeur du SeekBar (entre 0 et 100)
+                // 5. Récupérer la valeur du SeekBar
                 int progression = seekBarApresMidi.getProgress();
 
-                // 6. Appliquer la logique du jeu (selon votre plan)
                 // Si la barre est plutôt à gauche (< 50) -> Travailler
                 if (progression < 50) {
                     joueur.setCompetences(joueur.getCompetences() + 10);
@@ -50,7 +49,6 @@ public class SceneApresMidiActivity extends AppCompatActivity {
                 }
 
                 // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-                // (Scène 12: Corvée. Vous créerez "SceneCorveeActivity.java" ensuite)
                 Intent intent = new Intent(SceneApresMidiActivity.this, SceneCorveeActivity.class);
 
                 // On attache l'objet "joueur" MIS À JOUR

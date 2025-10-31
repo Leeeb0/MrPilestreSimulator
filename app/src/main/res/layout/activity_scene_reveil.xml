@@ -32,13 +32,13 @@
             android:id="@+id/rbSnooze"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dormir 15 min de plus (Énergie +5, Retard +1)" />
+            android:text="Dormir 15 min de plus" />
 
         <RadioButton
             android:id="@+id/rbGetUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Se lever direct (Énergie -5, Discipline +1)" />
+            android:text="Se lever direct" />
 
     </RadioGroup>
 

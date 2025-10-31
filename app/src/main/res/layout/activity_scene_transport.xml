@@ -32,19 +32,19 @@
             android:id="@+id/rbPied"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="À pied (Santé +5, Énergie -5)" />
+            android:text="À pied" />
 
         <RadioButton
             android:id="@+id/rbBus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bus (Argent -2)" />
+            android:text="Bus" />
 
         <RadioButton
             android:id="@+id/rbVoiture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Voiture (Argent -10, Stress +2)" />
+            android:text="Voiture" />
 
     </RadioGroup>
 

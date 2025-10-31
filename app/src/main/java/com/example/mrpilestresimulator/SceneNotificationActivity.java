@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton; // <-- MODIFICATION : On utilise des ImageButton
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class SceneNotificationActivity extends AppCompatActivity {
@@ -15,7 +15,7 @@ public class SceneNotificationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (qui utilise ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_notification);
 
         // 2. Récupérer l'objet joueur transmis par SceneHygieneActivity
@@ -37,7 +37,7 @@ public class SceneNotificationActivity extends AppCompatActivity {
         btnInvitation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Bonheur +5)
+                // 5. Appliquer la logique du jeu
                 joueur.setBonheur(joueur.getBonheur() + 5);
 
                 // 6. Passer à la scène suivante
@@ -49,7 +49,7 @@ public class SceneNotificationActivity extends AppCompatActivity {
         btnMauvaiseNouvelle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Bonheur -5)
+                // 5. Appliquer la logique du jeu
                 joueur.setBonheur(joueur.getBonheur() - 5);
 
                 // 6. Passer à la scène suivante
@@ -61,22 +61,14 @@ public class SceneNotificationActivity extends AppCompatActivity {
         btnRien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Aucun effet)
-                // On ne fait rien
-
                 // 6. Passer à la scène suivante
                 passerALaSceneSuivante();
             }
         });
     }
 
-    /**
-     * Méthode pour préparer et lancer l'activité suivante.
-     * C'est la même logique que dans les scènes précédentes.
-     */
     private void passerALaSceneSuivante() {
         // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-        // (Scène 5: Petit-déjeuner. Vous créerez "ScenePetitDejeunerActivity.java" ensuite)
         Intent intent = new Intent(SceneNotificationActivity.this, ScenePetitDejeunerActivity.class);
 
         // On attache l'objet "joueur" MIS À JOUR

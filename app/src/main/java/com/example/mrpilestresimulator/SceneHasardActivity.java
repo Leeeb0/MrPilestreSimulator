@@ -17,7 +17,7 @@ public class SceneHasardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_hasard);
 
         // 2. Récupérer l'objet joueur
@@ -36,12 +36,12 @@ public class SceneHasardActivity extends AppCompatActivity {
         boolean aGagne = random.nextBoolean();
 
         if (aGagne) {
-            // Appliquer le gain (Argent +10)
+            // Appliquer le gain
             joueur.setArgent(joueur.getArgent() + 10);
             // Mettre à jour le texte
             tvResultatHasard.setText("Incroyable ! C'est votre jour de chance, vous gagnez !\n(Argent +10)");
         } else {
-            // Appliquer la perte (Argent -2)
+            // Appliquer la perte
             joueur.setArgent(joueur.getArgent() - 2);
             // Mettre à jour le texte
             tvResultatHasard.setText("Dommage... Vous perdez. Ce n'est pas grand-chose.\n(Argent -2)");
@@ -52,7 +52,6 @@ public class SceneHasardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 6. PRÉPARER L'ACTIVITÉ SUIVANTE
-                // (Scène 14: Soir. Vous créerez "SceneSoirActivity.java" ensuite)
                 Intent intent = new Intent(SceneHasardActivity.this, SceneSoirActivity.class);
 
                 // On attache l'objet "joueur" MIS À JOUR

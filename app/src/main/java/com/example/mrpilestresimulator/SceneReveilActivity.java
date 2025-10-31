@@ -17,7 +17,7 @@ public class SceneReveilActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scene_reveil); // 1. Le layout pour CETTE scène
+        setContentView(R.layout.activity_scene_reveil);
 
         // 2. RÉCUPÉRER L'OBJET JOUEUR
         joueur = getIntent().getParcelableExtra("JOUEUR_STATS");

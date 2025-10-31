@@ -17,7 +17,7 @@ public class SceneTransportActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_transport);
 
         // 2. Récupérer l'objet joueur
@@ -36,7 +36,7 @@ public class SceneTransportActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int selectedId = transportGroup.getCheckedRadioButtonId();
 
-                // 5. Appliquer la logique du jeu (selon votre plan "android (3).pdf")
+                // 5. Appliquer la logique du jeu
                 if (selectedId == R.id.rbPied) { // Option: À pied
                     joueur.setSante(joueur.getSante() + 5);
                     joueur.setEnergie(joueur.getEnergie() - 5);
@@ -46,13 +46,12 @@ public class SceneTransportActivity extends AppCompatActivity {
                     joueur.setArgent(joueur.getArgent() - 10);
                     joueur.setStress(joueur.getStress() + 2);
                 } else {
-                    // 6. Contrôle d'erreur (requis par le projet)
+                    // 6. Contrôle d'erreur
                     Toast.makeText(SceneTransportActivity.this, "Comment comptes-tu y aller ?", Toast.LENGTH_SHORT).show();
-                    return; // On arrête le clic ici
+                    return;
                 }
 
                 // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-                // (Scène 7: Météo. Vous créerez "SceneMeteoActivity.java" ensuite)
                 Intent intent = new Intent(SceneTransportActivity.this, SceneMeteoActivity.class);
 
                 // On attache l'objet "joueur" MIS À JOUR

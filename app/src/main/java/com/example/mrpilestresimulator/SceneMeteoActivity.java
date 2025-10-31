@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView; // <-- On a besoin d'un TextView
-import java.util.Random; // <-- On a besoin de "Random" pour l'aléatoire
+import android.widget.TextView;
+import java.util.Random;
 
 public class SceneMeteoActivity extends AppCompatActivity {
 
@@ -17,7 +17,7 @@ public class SceneMeteoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_meteo);
 
         // 2. Récupérer l'objet joueur
@@ -35,7 +35,7 @@ public class SceneMeteoActivity extends AppCompatActivity {
         boolean ilPleut = random.nextBoolean(); // 50% de chance (true/false)
 
         if (ilPleut) {
-            // Appliquer les malus de la pluie (Santé -5, Bonheur -5)
+            // Appliquer les malus de la pluie
             joueur.setSante(joueur.getSante() - 5);
             joueur.setBonheur(joueur.getBonheur() - 5);
             // Mettre à jour le texte
@@ -51,7 +51,6 @@ public class SceneMeteoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 6. PRÉPARER L'ACTIVITÉ SUIVANTE
-                // (Scène 8: Tâche imprévue. Vous créerez "SceneTacheImprevueActivity.java" ensuite)
                 Intent intent = new Intent(SceneMeteoActivity.this, SceneTacheImprevueActivity.class);
 
                 // On attache l'objet "joueur" MIS À JOUR

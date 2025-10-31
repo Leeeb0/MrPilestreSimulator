@@ -17,7 +17,7 @@ public class SceneHygieneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (qui utilise ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_hygiene);
 
         // 2. Récupérer l'objet joueur transmis par SceneReveilActivity
@@ -38,7 +38,7 @@ public class SceneHygieneActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int selectedId = hygieneGroup.getCheckedRadioButtonId();
 
-                // 5. Appliquer la logique du jeu (selon votre plan "android (3).pdf")
+                // 5. Appliquer la logique du jeu
                 if (selectedId == R.id.rbShowerFast) { // Option: Douche rapide
                     joueur.setEnergie(joueur.getEnergie() + 5);
                     joueur.setSante(joueur.getSante() + 2);
@@ -49,13 +49,12 @@ public class SceneHygieneActivity extends AppCompatActivity {
                     joueur.setSante(joueur.getSante() - 10);
                     joueur.setBonheur(joueur.getBonheur() - 5);
                 } else {
-                    // 6. Contrôle d'erreur (requis par le projet)
+                    // 6. Contrôle d'erreur
                     Toast.makeText(SceneHygieneActivity.this, "Un peu d'hygiène s'il vous plaît !", Toast.LENGTH_SHORT).show();
-                    return; // On arrête le clic ici
+                    return;
                 }
 
                 // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-                // (Scène 4: Notification. Vous créerez "SceneNotificationActivity.java" ensuite)
                 Intent intent = new Intent(SceneHygieneActivity.this, SceneNotificationActivity.class);
 
                 // On attache l'objet "joueur" MIS À JOUR

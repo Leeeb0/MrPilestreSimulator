@@ -32,19 +32,19 @@
             android:id="@+id/rbShowerFast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Douche rapide (Énergie +5, Santé +2)" />
+            android:text="Douche rapide" />
 
         <RadioButton
             android:id="@+id/rbShowerCold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Douche froide (Énergie +10, Bonheur -5)" />
+            android:text="Douche froide" />
 
         <RadioButton
             android:id="@+id/rbNoShower"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pas de douche (Santé -10, Bonheur -5)" />
+            android:text="Pas de douches" />
 
     </RadioGroup>
 

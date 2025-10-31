@@ -4,18 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button; // <-- On utilise des Button
+import android.widget.Button;
 import android.widget.Toast;
 
 public class SceneTacheImprevueActivity extends AppCompatActivity {
 
     private MrPilestre joueur;
-    private Button btnAccepter, btnRefuser; // <-- Les deux boutons de choix
+    private Button btnAccepter, btnRefuser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_tache_imprevue);
 
         // 2. Récupérer l'objet joueur
@@ -32,7 +32,7 @@ public class SceneTacheImprevueActivity extends AppCompatActivity {
         btnAccepter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Accepter)
+                // 5. Appliquer la logique du jeu
                 joueur.setCompetences(joueur.getCompetences() + 5);
                 joueur.setEnergie(joueur.getEnergie() - 10);
 
@@ -45,7 +45,7 @@ public class SceneTacheImprevueActivity extends AppCompatActivity {
         btnRefuser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Refuser)
+                // 5. Appliquer la logique du jeu
                 joueur.setBonheur(joueur.getBonheur() + 5);
                 joueur.setDiscipline(joueur.getDiscipline() - 5);
 
@@ -55,12 +55,8 @@ public class SceneTacheImprevueActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Méthode partagée pour lancer l'activité suivante.
-     */
     private void passerALaSceneSuivante() {
         // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-        // (Scène 9: Pause détente. Vous créerez "ScenePauseDetenteActivity.java" ensuite)
         Intent intent = new Intent(SceneTacheImprevueActivity.this, ScenePauseDetenteActivity.class);
 
         // On attache l'objet "joueur" MIS À JOUR

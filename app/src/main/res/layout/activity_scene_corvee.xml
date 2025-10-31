@@ -33,20 +33,20 @@
             android:id="@+id/cbVaisselle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vaisselle (Discipline +5, Bonheur -5)" />
+            android:text="Vaisselle" />
 
         <CheckBox
             android:id="@+id/cbLinge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Linge (Discipline +5, Énergie -5)" />
+            android:text="Linge" />
 
         <CheckBox
             android:id="@+id/cbIgnorer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Ignorer (Bonheur +5, Discipline -10)" />
+            android:text="Ignorer" />
 
     </LinearLayout>
 

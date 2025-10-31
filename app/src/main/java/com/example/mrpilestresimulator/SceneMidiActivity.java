@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button; // <-- On utilise des Button
+import android.widget.Button;
 import android.widget.Toast;
 
 public class SceneMidiActivity extends AppCompatActivity {
@@ -15,7 +15,7 @@ public class SceneMidiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_midi);
 
         // 2. Récupérer l'objet joueur
@@ -33,7 +33,7 @@ public class SceneMidiActivity extends AppCompatActivity {
         btnSeul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Seul)
+                // 5. Appliquer la logique du jeu
                 joueur.setBonheur(joueur.getBonheur() - 5);
                 joueur.setArgent(joueur.getArgent() - 2);
 
@@ -46,7 +46,7 @@ public class SceneMidiActivity extends AppCompatActivity {
         btnAmis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Amis)
+                // 5. Appliquer la logique du jeu
                 joueur.setBonheur(joueur.getBonheur() + 10);
                 joueur.setArgent(joueur.getArgent() - 5);
 
@@ -59,7 +59,7 @@ public class SceneMidiActivity extends AppCompatActivity {
         btnFastFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 5. Appliquer la logique du jeu (Fast-food)
+                // 5. Appliquer la logique du jeu
                 joueur.setSante(joueur.getSante() - 5);
                 joueur.setArgent(joueur.getArgent() - 8);
                 joueur.setBonheur(joueur.getBonheur() + 5);
@@ -70,12 +70,8 @@ public class SceneMidiActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Méthode partagée pour lancer l'activité suivante.
-     */
     private void passerALaSceneSuivante() {
         // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-        // (Scène 11: Après-midi. Vous créerez "SceneApresMidiActivity.java" ensuite)
         Intent intent = new Intent(SceneMidiActivity.this, SceneApresMidiActivity.class);
 
         // On attache l'objet "joueur" MIS À JOUR
