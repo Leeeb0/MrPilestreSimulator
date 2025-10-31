@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SceneCorveeActivity">
+
+    <TextView
+        android:id="@+id/tvQuestionCorvee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="De retour chez toi, une tâche ménagère t'attend. Que fais-tu?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutChecks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionCorvee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp">
+
+        <CheckBox
+            android:id="@+id/cbVaisselle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaisselle (Discipline +5, Bonheur -5)" />
+
+        <CheckBox
+            android:id="@+id/cbLinge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linge (Discipline +5, Énergie -5)" />
+
+        <CheckBox
+            android:id="@+id/cbIgnorer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ignorer (Bonheur +5, Discipline -10)" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNextSceneCorvee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

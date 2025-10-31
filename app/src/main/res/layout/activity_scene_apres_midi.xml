@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SceneApresMidiActivity">
+
+    <TextView
+        android:id="@+id/tvQuestionApresMidi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="L'après-midi commence. Quelle activité te semble la plus juste?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarApresMidi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:max="100"
+        android:progress="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionApresMidi" />
+
+    <TextView
+        android:id="@+id/tvLabelTravailler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réviser/Travailler"
+        app:layout_constraintStart_toStartOf="@+id/seekBarApresMidi"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarApresMidi"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvLabelSortir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sortir au bar"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarApresMidi"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarApresMidi"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnNextSceneApresMidi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
