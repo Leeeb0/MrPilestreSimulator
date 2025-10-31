@@ -21,14 +21,14 @@ public class SceneSommeilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scene_sommeil);
 
         // 2. Récupérer l'objet joueur (logique TP PokeStat)
-        [cite_start]joueur = getIntent().getParcelableExtra("JOUEUR_STATS"); [cite: 9355]
+        joueur = getIntent().getParcelableExtra("JOUEUR_STATS");
         if (joueur == null) {
             joueur = new MrPilestre();
         }
 
         // 3. Lier les widgets (logique TP ConvTemp)
-        [cite_start]sommeilGroup = findViewById(R.id.sommeilGroup); [cite: 10811]
-        [cite_start]btnNext = findViewById(R.id.btnNextSceneSommeil); [cite: 10811]
+        sommeilGroup = findViewById(R.id.sommeilGroup);
+        btnNext = findViewById(R.id.btnNextSceneSommeil);
 
         // 4. Définir l'action du bouton "Suivant"
         btnNext.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +57,7 @@ public class SceneSommeilActivity extends AppCompatActivity {
                 Intent intent = new Intent(SceneSommeilActivity.this, SceneRecapEmotionnelActivity.class);
 
                 // On attache l'objet "joueur" MIS À JOUR (logique TP PokeStat)
-                [cite_start]intent.putExtra("JOUEUR_STATS", joueur); [cite: 9353, 9354]
+                intent.putExtra("JOUEUR_STATS", joueur);
 
                 // On démarre la scène 17
                 startActivity(intent);

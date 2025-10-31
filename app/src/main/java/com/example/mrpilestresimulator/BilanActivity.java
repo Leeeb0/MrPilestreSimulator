@@ -2,8 +2,8 @@ package com.example.mrpilestresimulator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context; // <-- Requis pour SharedPreferences
-import android.content.SharedPreferences; // <-- Requis pour la sauvegarde (vu en TP PokeStatSuite)
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,16 +19,15 @@ public class BilanActivity extends AppCompatActivity {
     private TextView tvTexteEnergie, tvTexteSante, tvTexteBonheur, tvTexteArgent, tvTexteDiscipline, tvTexteStress, tvTexteCompetences, tvTexteRetard;
     private Button btnQuitter;
 
-    // Nom pour notre fichier de sauvegarde (logique TP PokeStatSuite) [cite: 9992-10004]
+    // Nom pour notre fichier de sauvegarde
     public static final String PREFS_NAME = "BilanPilestrePrefs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML du Bilan
         setContentView(R.layout.activity_bilan);
 
-        // 2. Récupérer l'objet joueur FINAL (logique TP PokeStat) [cite: 11129, 9959]
+        // 2. Récupérer l'objet joueur FINAL
         joueur = getIntent().getParcelableExtra("JOUEUR_STATS");
         if (joueur == null) {
             joueur = new MrPilestre(); // Sécurité
@@ -57,14 +56,13 @@ public class BilanActivity extends AppCompatActivity {
         // 4. Afficher le bilan
         afficherBilan();
 
-        // 5. Sauvegarder le bilan (Exigence Projet 5.2)
+        // 5. Sauvegarder le bilan
         sauvegarderBilan();
 
-        // 6. Configurer le bouton Quitter (Exigence Projet 5.1)
+        // 6. Configurer le bouton Quitter
         btnQuitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Cette commande ferme TOUTES les activités et quitte l'app
                 finishAffinity();
             }
         });
@@ -83,89 +81,89 @@ public class BilanActivity extends AppCompatActivity {
         int competences = joueur.getCompetences();
         int retard = joueur.getRetard();
 
-        // --- Énergie --- [cite: 9747-9749]
+        // --- Énergie ---
         pbEnergie.setProgress(energie);
         if (energie >= 70) {
-            tvTexteEnergie.setText("Tu débordes d'énergie, prêt à conquérir le monde !"); [cite: 9747]
+            tvTexteEnergie.setText("Tu débordes d'énergie, prêt à conquérir le monde !");
         } else if (energie >= 40) {
-            tvTexteEnergie.setText("Tu tiens le coup, mais une pause ne ferait pas de mal."); [cite: 9748]
+            tvTexteEnergie.setText("Tu tiens le coup, mais une pause ne ferait pas de mal.");
         } else {
-            tvTexteEnergie.setText("Tu es épuisé... pense à te reposer demain."); [cite: 9749]
+            tvTexteEnergie.setText("Tu es épuisé... pense à te reposer demain.");
         }
 
-        // --- Santé --- [cite: 9751-9753]
+        // --- Santé ---
         pbSante.setProgress(sante);
         if (sante >= 70) {
-            tvTexteSante.setText("Ta santé est au top, continue comme ça !"); [cite: 9751]
+            tvTexteSante.setText("Ta santé est au top, continue comme ça !");
         } else if (sante >= 40) {
-            tvTexteSante.setText("Tu es en forme, mais attention aux excès."); [cite: 9752]
+            tvTexteSante.setText("Tu es en forme, mais attention aux excès.");
         } else {
-            tvTexteSante.setText("Ta santé est fragile, prends soin de toi."); [cite: 9753]
+            tvTexteSante.setText("Ta santé est fragile, prends soin de toi.");
         }
 
-        // --- Bonheur --- [cite: 9755-9757]
+        // --- Bonheur ---
         pbBonheur.setProgress(bonheur);
         if (bonheur >= 70) {
-            tvTexteBonheur.setText("Tu es rayonnant, ta journée t'a comblé !"); [cite: 9755]
+            tvTexteBonheur.setText("Tu es rayonnant, ta journée t'a comblé !");
         } else if (bonheur >= 40) {
-            tvTexteBonheur.setText("Tu es plutôt satisfait, mais il manque un petit quelque chose."); [cite: 9756]
+            tvTexteBonheur.setText("Tu es plutôt satisfait, mais il manque un petit quelque chose.");
         } else {
-            tvTexteBonheur.setText("Tu sembles stressé... essaie de te faire plaisir demain."); [cite: 9757]
+            tvTexteBonheur.setText("Tu sembles stressé... essaie de te faire plaisir demain.");
         }
 
-        // --- Argent --- [cite: 9759-9761]
+        // --- Argent ---
         pbArgent.setProgress(argent);
         if (argent >= 70) {
-            tvTexteArgent.setText("Ton budget est solide, tu peux te faire plaisir."); [cite: 9759]
+            tvTexteArgent.setText("Ton budget est solide, tu peux te faire plaisir.");
         } else if (argent >= 40) {
-            tvTexteArgent.setText("Tu gères bien ton argent, mais reste prudent."); [cite: 9760]
+            tvTexteArgent.setText("Tu gères bien ton argent, mais reste prudent.");
         } else {
-            tvTexteArgent.setText("Attention, ton budget fond comme neige au soleil!"); [cite: 9761]
+            tvTexteArgent.setText("Attention, ton budget fond comme neige au soleil!");
         }
 
-        // --- Discipline --- [cite: 9763-9764]
+        // --- Discipline ---
         pbDiscipline.setProgress(discipline);
         if (discipline >= 70) {
-            tvTexteDiscipline.setText("Tu es exemplaire, une vraie machine de rigueur!"); [cite: 9763]
+            tvTexteDiscipline.setText("Tu es exemplaire, une vraie machine de rigueur!");
         } else if (discipline >= 40) {
-            tvTexteDiscipline.setText("Tu es plutôt discipliné, mais tu peux faire mieux."); [cite: 9764]
+            tvTexteDiscipline.setText("Tu es plutôt discipliné, mais tu peux faire mieux.");
         } else {
-            tvTexteDiscipline.setText("Tu as du mal à suivre une routine... essaie de te cadrer."); [cite: 9764]
+            tvTexteDiscipline.setText("Tu as du mal à suivre une routine... essaie de te cadrer.");
         }
 
-        // --- Stress --- (Attention, logique inversée) [cite: 9766-9769]
+        // --- Stress --- (Attention, logique inversée)
         pbStress.setProgress(stress);
         if (stress <= 30) {
-            tvTexteStress.setText("Tu es détendu, rien ne t'atteint aujourd'hui."); [cite: 9766]
+            tvTexteStress.setText("Tu es détendu, rien ne t'atteint aujourd'hui.");
         } else if (stress <= 69) {
-            tvTexteStress.setText("Tu as géré ton stress, mais quelques tensions subsistent."); [cite: 9767-9768]
+            tvTexteStress.setText("Tu as géré ton stress, mais quelques tensions subsistent.");
         } else {
-            tvTexteStress.setText("Tu es sous pression... pense à souffler demain."); [cite: 9769]
+            tvTexteStress.setText("Tu es sous pression... pense à souffler demain.");
         }
 
-        // --- Compétences --- [cite: 9771-9773]
+        // --- Compétences ---
         pbCompetences.setProgress(competences);
         if (competences >= 70) {
-            tvTexteCompetences.setText("Tu as appris plein de choses aujourd'hui, bravo!"); [cite: 9771]
+            tvTexteCompetences.setText("Tu as appris plein de choses aujourd'hui, bravo!");
         } else if (competences >= 40) {
-            tvTexteCompetences.setText("Tu as progressé, mais tu peux aller plus loin."); [cite: 9772]
+            tvTexteCompetences.setText("Tu as progressé, mais tu peux aller plus loin.");
         } else {
-            tvTexteCompetences.setText("Tu n'as pas beaucoup stimulé ton esprit aujourd'hui."); [cite: 9773]
+            tvTexteCompetences.setText("Tu n'as pas beaucoup stimulé ton esprit aujourd'hui.");
         }
 
-        // --- Retard --- (Logique spéciale) [cite: 9775-9777]
-        pbRetard.setProgress(retard); // On peut ajuster le 'max' de cette barre si 100 est trop
+        // --- Retard --- (Logique spéciale)
+        pbRetard.setProgress(retard);
         if (retard == 0) {
-            tvTexteRetard.setText("Tu as été ponctuel toute la journée, félicitations !"); [cite: 9775]
+            tvTexteRetard.setText("Tu as été ponctuel toute la journée, félicitations !");
         } else if (retard <= 20) {
-            tvTexteRetard.setText("Un petit retard, rien de grave."); [cite: 9776]
+            tvTexteRetard.setText("Un petit retard, rien de grave.");
         } else {
-            tvTexteRetard.setText("Tu accumules du retard... attention à la désorganisation."); [cite: 9777]
+            tvTexteRetard.setText("Tu accumules du retard... attention à la désorganisation.");
         }
     }
 
     /**
-     * Sauvegarde les 8 stats dans les SharedPreferences (logique TP PokeStatSuite) [cite: 9992-10004]
+     * Sauvegarde les 8 stats dans les SharedPreferences
      */
     private void sauvegarderBilan() {
         SharedPreferences sharedPref = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
@@ -180,6 +178,6 @@ public class BilanActivity extends AppCompatActivity {
         editor.putInt("competences", joueur.getCompetences());
         editor.putInt("retard", joueur.getRetard());
 
-        editor.apply(); // Valide la sauvegarde [cite: 10003, 10430, 11404]
+        editor.apply(); // Valide la sauvegarde
     }
 }

@@ -25,7 +25,9 @@
         android:layout_height="100dp"
         android:contentDescription="Satisfait"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_menu_emoticons"
+
+        app:srcCompat="@android:drawable/btn_star_big_on"
+
         app:layout_constraintVertical_bias="0.4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnMitige"
@@ -51,7 +53,9 @@
         android:layout_marginEnd="16dp"
         android:contentDescription="Mitigé"
         android:scaleType="fitCenter"
+
         app:srcCompat="@android:drawable/ic_menu_help"
+
         app:layout_constraintBottom_toBottomOf="@+id/btnSatisfait"
         app:layout_constraintEnd_toStartOf="@+id/btnEpuise"
         app:layout_constraintStart_toEndOf="@+id/btnSatisfait"
@@ -73,7 +77,9 @@
         android:layout_height="100dp"
         android:contentDescription="Épuisé"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_menu_report_image"
+
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+
         app:layout_constraintBottom_toBottomOf="@+id/btnSatisfait"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnMitige"
