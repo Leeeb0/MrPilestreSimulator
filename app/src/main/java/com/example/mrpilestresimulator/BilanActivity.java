@@ -30,7 +30,7 @@ public class BilanActivity extends AppCompatActivity {
         // 2. Récupérer l'objet joueur FINAL
         joueur = getIntent().getParcelableExtra("JOUEUR_STATS");
         if (joueur == null) {
-            joueur = new MrPilestre(); // Sécurité
+            joueur = new MrPilestre();
         }
 
         // 3. Lier TOUS les widgets
@@ -68,9 +68,6 @@ public class BilanActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Remplit les champs du bilan avec les stats du joueur
-     */
     private void afficherBilan() {
         int energie = joueur.getEnergie();
         int sante = joueur.getSante();
@@ -131,7 +128,7 @@ public class BilanActivity extends AppCompatActivity {
             tvTexteDiscipline.setText("Tu as du mal à suivre une routine... essaie de te cadrer.");
         }
 
-        // --- Stress --- (Attention, logique inversée)
+        // --- Stress ---
         pbStress.setProgress(stress);
         if (stress <= 30) {
             tvTexteStress.setText("Tu es détendu, rien ne t'atteint aujourd'hui.");
@@ -151,7 +148,7 @@ public class BilanActivity extends AppCompatActivity {
             tvTexteCompetences.setText("Tu n'as pas beaucoup stimulé ton esprit aujourd'hui.");
         }
 
-        // --- Retard --- (Logique spéciale)
+        // --- Retard ---
         pbRetard.setProgress(retard);
         if (retard == 0) {
             tvTexteRetard.setText("Tu as été ponctuel toute la journée, félicitations !");
@@ -162,9 +159,6 @@ public class BilanActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Sauvegarde les 8 stats dans les SharedPreferences
-     */
     private void sauvegarderBilan() {
         SharedPreferences sharedPref = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
@@ -178,6 +172,6 @@ public class BilanActivity extends AppCompatActivity {
         editor.putInt("competences", joueur.getCompetences());
         editor.putInt("retard", joueur.getRetard());
 
-        editor.apply(); // Valide la sauvegarde
+        editor.apply();
     }
 }

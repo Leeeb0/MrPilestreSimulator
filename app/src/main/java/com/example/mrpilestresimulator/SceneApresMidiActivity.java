@@ -38,12 +38,12 @@ public class SceneApresMidiActivity extends AppCompatActivity {
                 // 5. Récupérer la valeur du SeekBar
                 int progression = seekBarApresMidi.getProgress();
 
-                // Si la barre est plutôt à gauche (< 50) -> Travailler
+                // Si la barre est plutôt à gauche
                 if (progression < 50) {
                     joueur.setCompetences(joueur.getCompetences() + 10);
                     joueur.setBonheur(joueur.getBonheur() - 5);
                 } else {
-                    // Si la barre est plutôt à droite (>= 50) -> Sortir
+                    // Si la barre est plutôt à droite
                     joueur.setBonheur(joueur.getBonheur() + 10);
                     joueur.setCompetences(joueur.getCompetences() - 5);
                 }

@@ -7,20 +7,20 @@
     <string name="tr_s_bien">Très bien</string>
 
     <string-array name="petit_dejeuner_options">
-        <item>Rien (Énergie -10, Santé -5)</item>
-        <item>Café/croissant (Énergie +5, Santé -2, Argent -5)</item>
-        <item>Repas équilibré (Énergie +10, Santé +10, Argent -10)</item>
+        <item>Rien</item>
+        <item>Café/croissant</item>
+        <item>Repas équilibré</item>
     </string-array>
 
     <string-array name="pause_detente_options">
-        <item>Sieste (Énergie +10)</item>
-        <item>Réseaux sociaux (Bonheur +5, Énergie -5)</item>
-        <item>Lecture (Compétences +5)</item>
+        <item>Sieste</item>
+        <item>Réseaux sociaux</item>
+        <item>Lecture</item>
     </string-array>
 
     <string-array name="diner_options">
-        <item>Pizza surgelée (Santé -5, Bonheur +5, Argent -8)</item>
-        <item>Salade maison (Santé +10, Énergie +5, Argent -5)</item>
-        <item>Restaurant (Bonheur +10, Santé +5, Argent -20)</item>
+        <item>Pizza surgelée</item>
+        <item>Salade maison</item>
+        <item>Restaurant</item>
     </string-array>
 </resources>

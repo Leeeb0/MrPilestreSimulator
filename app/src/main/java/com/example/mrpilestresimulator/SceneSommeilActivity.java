@@ -17,16 +17,16 @@ public class SceneSommeilActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_sommeil);
 
-        // 2. Récupérer l'objet joueur (logique TP PokeStat)
+        // 2. Récupérer l'objet joueur
         joueur = getIntent().getParcelableExtra("JOUEUR_STATS");
         if (joueur == null) {
             joueur = new MrPilestre();
         }
 
-        // 3. Lier les widgets (logique TP ConvTemp)
+        // 3. Lier les widgets
         sommeilGroup = findViewById(R.id.sommeilGroup);
         btnNext = findViewById(R.id.btnNextSceneSommeil);
 
@@ -36,7 +36,7 @@ public class SceneSommeilActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int selectedId = sommeilGroup.getCheckedRadioButtonId();
 
-                // 5. Appliquer la logique du jeu (selon votre plan)
+                // 5. Appliquer la logique du jeu
                 if (selectedId == R.id.rbScroll) { // Option: Scroll téléphone
                     joueur.setEnergie(joueur.getEnergie() - 10);
                     joueur.setBonheur(joueur.getBonheur() + 5);
@@ -47,16 +47,15 @@ public class SceneSommeilActivity extends AppCompatActivity {
                     joueur.setEnergie(joueur.getEnergie() + 5);
                     joueur.setSante(joueur.getSante() + 10);
                 } else {
-                    // 6. Contrôle d'erreur (requis par le projet)
+                    // 6. Contrôle d'erreur
                     Toast.makeText(SceneSommeilActivity.this, "Tu dois bien faire quelque chose avant de dormir !", Toast.LENGTH_SHORT).show();
-                    return; // On arrête le clic ici
+                    return;
                 }
 
                 // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-                // (Scène 17: Récap émo. Vous créerez "SceneRecapEmotionnelActivity.java" ensuite)
                 Intent intent = new Intent(SceneSommeilActivity.this, SceneRecapEmotionnelActivity.class);
 
-                // On attache l'objet "joueur" MIS À JOUR (logique TP PokeStat)
+                // On attache l'objet "joueur" MIS À JOUR
                 intent.putExtra("JOUEUR_STATS", joueur);
 
                 // On démarre la scène 17

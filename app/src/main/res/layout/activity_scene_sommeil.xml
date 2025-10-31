@@ -32,19 +32,19 @@
             android:id="@+id/rbScroll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scroll téléphone (Énergie -10, Bonheur +5)" />
+            android:text="Scroll téléphone" />
 
         <RadioButton
             android:id="@+id/rbLecture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lecture calme (Énergie -5, Santé +5)" />
+            android:text="Lecture calme" />
 
         <RadioButton
             android:id="@+id/rbMeditation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Méditation (Énergie +5, Santé +10)" />
+            android:text="Méditation" />
 
     </RadioGroup>
 

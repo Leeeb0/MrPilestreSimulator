@@ -42,7 +42,7 @@ public class SceneCorveeActivity extends AppCompatActivity {
                 boolean lingeChecked = cbLinge.isChecked();
                 boolean ignorerChecked = cbIgnorer.isChecked();
 
-                // 6. Contrôle d'erreur Si rien n'est coché, on affiche une erreur et on arrête.
+                // 6. Contrôle d'erreur
                 if (!vaisselleChecked && !lingeChecked && !ignorerChecked) {
                     Toast.makeText(SceneCorveeActivity.this, "Tu dois faire un choix !", Toast.LENGTH_SHORT).show();
                     return;
@@ -50,11 +50,9 @@ public class SceneCorveeActivity extends AppCompatActivity {
 
                 // 7. Appliquer la logique du jeu
                 if (ignorerChecked) {
-                    // Si "Ignorer" est coché, il annule le reste
                     joueur.setBonheur(joueur.getBonheur() + 5);
                     joueur.setDiscipline(joueur.getDiscipline() - 10);
                 } else {
-                    // Sinon, on applique les effets (qui peuvent se cumuler)
                     if (vaisselleChecked) {
                         joueur.setDiscipline(joueur.getDiscipline() + 5);
                         joueur.setBonheur(joueur.getBonheur() - 5);

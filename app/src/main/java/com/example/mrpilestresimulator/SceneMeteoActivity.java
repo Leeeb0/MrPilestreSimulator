@@ -32,16 +32,13 @@ public class SceneMeteoActivity extends AppCompatActivity {
 
         // 4. Logique de l'événement aléatoire
         Random random = new Random();
-        boolean ilPleut = random.nextBoolean(); // 50% de chance (true/false)
+        boolean ilPleut = random.nextBoolean();
 
         if (ilPleut) {
-            // Appliquer les malus de la pluie
             joueur.setSante(joueur.getSante() - 5);
             joueur.setBonheur(joueur.getBonheur() - 5);
-            // Mettre à jour le texte
             tvDescriptionMeteo.setText("Le ciel se couvre soudainement... et une averse éclate ! Vous n'aviez pas de parapluie.\n(Santé -5, Bonheur -5)");
         } else {
-            // Aucun effet
             tvDescriptionMeteo.setText("Le ciel se couvre soudainement... mais le soleil perce finalement les nuages. Ouf !");
         }
 

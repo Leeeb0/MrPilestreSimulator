@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".ScenePetitDejeunerActivity"
-    tools:ignore="ExtraText">
+    tools:context=".ScenePetitDejeunerActivity">
 
     <TextView
         android:id="@+id/tvQuestionPetitDejeuner"
@@ -18,37 +17,20 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
-
-    // C'est ici que le Spinner va chercher les options dans strings.xml
-    android:entries="@array/petit_dejeuner_options"
-
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/tvQuestionPetitDejeuner" />
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinnerPetitDejeuner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="24dp"
         android:minHeight="48dp"
+
+        android:entries="@array/petit_dejeuner_options"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestionPetitDejeuner"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionPetitDejeuner" />
 
     <Button
         android:id="@+id/btnNextScenePetitDejeuner"

@@ -5,8 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView; // <-- On a besoin d'un TextView
-import java.util.Random; // <-- On a besoin de "Random" pour l'aléatoire
+import android.widget.TextView;
+import java.util.Random;
 
 public class SceneHasardActivity extends AppCompatActivity {
 
@@ -32,18 +32,13 @@ public class SceneHasardActivity extends AppCompatActivity {
 
         // 4. Logique de l'événement aléatoire
         Random random = new Random();
-        // nextBoolean() donne 50% de chance de gagner (true) ou perdre (false)
         boolean aGagne = random.nextBoolean();
 
         if (aGagne) {
-            // Appliquer le gain
             joueur.setArgent(joueur.getArgent() + 10);
-            // Mettre à jour le texte
             tvResultatHasard.setText("Incroyable ! C'est votre jour de chance, vous gagnez !\n(Argent +10)");
         } else {
-            // Appliquer la perte
             joueur.setArgent(joueur.getArgent() - 2);
-            // Mettre à jour le texte
             tvResultatHasard.setText("Dommage... Vous perdez. Ce n'est pas grand-chose.\n(Argent -2)");
         }
 

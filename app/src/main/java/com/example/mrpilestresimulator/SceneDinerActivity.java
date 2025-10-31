@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Spinner; // <-- On utilise un Spinner
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class SceneDinerActivity extends AppCompatActivity {
@@ -17,16 +17,16 @@ public class SceneDinerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 1. Lier le fichier XML (ConstraintLayout)
+        // 1. Lier le fichier XML
         setContentView(R.layout.activity_scene_diner);
 
-        // 2. Récupérer l'objet joueur (logique TP PokeStat)
+        // 2. Récupérer l'objet joueur
         joueur = getIntent().getParcelableExtra("JOUEUR_STATS");
         if (joueur == null) {
             joueur = new MrPilestre();
         }
 
-        // 3. Lier les widgets (logique TP ConvTemp)
+        // 3. Lier les widgets
         spinnerDiner = findViewById(R.id.spinnerDiner);
         btnNext = findViewById(R.id.btnNextSceneDiner);
 
@@ -36,10 +36,9 @@ public class SceneDinerActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // 5. Récupérer le choix du Spinner
-                // 0="Pizza", 1="Salade", 2="Restaurant"
                 int position = spinnerDiner.getSelectedItemPosition();
 
-                // 6. Appliquer la logique du jeu (selon votre plan)
+                // 6. Appliquer la logique du jeu
                 if (position == 0) { // Option: Pizza
                     joueur.setSante(joueur.getSante() - 5);
                     joueur.setBonheur(joueur.getBonheur() + 5);
@@ -55,7 +54,6 @@ public class SceneDinerActivity extends AppCompatActivity {
                 }
 
                 // 7. PRÉPARER L'ACTIVITÉ SUIVANTE
-                // (Scène 16: Prépa Sommeil. Vous créerez "SceneSommeilActivity.java" ensuite)
                 Intent intent = new Intent(SceneDinerActivity.this, SceneSommeilActivity.class);
 
                 // On attache l'objet "joueur" MIS À JOUR
