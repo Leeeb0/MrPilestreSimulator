@@ -13,13 +13,17 @@
         android:theme="@style/Theme.MrPilestreSimulator">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".AccueilActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
         </activity>
 
         <activity android:name=".SceneReveilActivity" android:exported="false" />
@@ -38,7 +42,6 @@
         <activity android:name=".SceneDinerActivity" android:exported="false" />
         <activity android:name=".SceneSommeilActivity" android:exported="false" />
         <activity android:name=".SceneRecapEmotionnelActivity" android:exported="false" />
-
         <activity android:name=".BilanActivity" android:exported="false" />
 
     </application>

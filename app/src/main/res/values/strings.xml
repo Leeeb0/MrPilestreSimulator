@@ -1,81 +1,81 @@
 <resources>
-    <string name="app_name">MrPilestreSimulator</string>
-    <string name="suivant">Suivant</string>
-    <string name="la_nuit_s_ach_ve_comment_as_tu_dormi">La nuit s’achève… Comment as-tu dormi ?</string>
-    <string name="mal">Mal</string>
-    <string name="insomnie">Insomnie</string>
-    <string name="tr_s_bien">Très bien</string>
-    <string name="quitter_l_application">Quitter l\'application</string>
-    <string name="voici_ton_bilan_de_la_journ_e">Voici ton bilan de la journée !</string>
-    <string name="argent">Argent</string>
-    <string name="bonheur">Bonheur</string>
-    <string name="comp_tences">Compétences</string>
-    <string name="discipline">Discipline</string>
-    <string name="nergie">Énergie</string>
-    <string name="retard">Retard</string>
-    <string name="sant">Santé</string>
-    <string name="stress">Stress</string>
-    <string name="texte_narratif_pour_l_argent">Texte narratif pour l\'argent...</string>
-    <string name="texte_narratif_pour_le_bonheur">Texte narratif pour le bonheur...</string>
-    <string name="texte_narratif_pour_les_comp_tences">Texte narratif pour les compétences...</string>
-    <string name="texte_narratif_pour_la_discipline">Texte narratif pour la discipline...</string>
-    <string name="texte_narratif_pour_l_nergie">Texte narratif pour l\'énergie...</string>
-    <string name="texte_narratif_pour_le_retard">Texte narratif pour le retard...</string>
-    <string name="texte_narratif_pour_la_sant">Texte narratif pour la santé...</string>
-    <string name="texte_narratif_pour_le_stress">Texte narratif pour le stress...</string>
-    <string name="valider">Valider</string>
-    <string name="sortir_au_bar">Sortir au bar</string>
-    <string name="r_viser_travailler">Réviser/Travailler</string>
-    <string name="l_apr_s_midi_commence_quelle_activit_te_semble_la_plus_juste">L\'après-midi commence. Quelle activité te semble la plus juste?</string>
-    <string name="ignorer">Ignorer</string>
-    <string name="linge">Linge</string>
-    <string name="vaisselle">Vaisselle</string>
-    <string name="de_retour_chez_toi_une_t_che_m_nag_re_t_attend_que_fais_tu">De retour chez toi, une tâche ménagère t\'attend. Que fais-tu?</string>
-    <string name="avant_de_dormir_tu_prends_ton_d_ner_que_choisis_tu">Avant de dormir, tu prends ton dîner. Que choisis-tu ?</string>
-    <string name="pas_de_douches">Pas de douches</string>
-    <string name="douche_froide">Douche froide</string>
-    <string name="douche_rapide">Douche rapide</string>
-    <string name="avant_de_commencer_ta_journ_e_tu_te_pr_pares_que_choisis_tu_de_faire">Avant de commencer ta journée, tu te prépares. Que choisis-tu de faire ?</string>
-    <string name="le_ciel_se_couvre_soudainement">Le ciel se couvre soudainement...</string>
-    <string name="avec_des_amis">Avec des amis</string>
-    <string name="fast_food">Fast-food</string>
-    <string name="seul">Seul</string>
-    <string name="c_est_l_heure_du_d_jeuner_avec_qui_choisis_tu_de_manger">C\'est l\'heure du déjeuner. Avec qui choisis-tu de manger?</string>
-    <string name="invitation">Invitation</string>
-    <string name="mauvaise_nouvelle">Mauvaise nouvelle</string>
-    <string name="rien">Rien</string>
-    <string name="une_notification_inattendue_s_affiche_sur_ton_t_l_phone_que_contient_elle">Une notification inattendue s\'affiche sur ton téléphone. Que contient-elle ?</string>
-    <string name="tu_as_un_moment_de_libre_comment_d_cides_tu_de_l_utiliser">Tu as un moment de libre. Comment décides-tu de l\'utiliser?</string>
-    <string name="il_est_temps_de_manger_quelque_chose_que_prends_tu_pour_le_petit_d_jeuner">Il est temps de manger quelque chose. Que prends-tu pour le petit-déjeuner?</string>
-    <string name="puis">Épuisé</string>
-    <string name="en_repensant_ta_journ_e_comment_te_sens_tu">En repensant à ta journée, comment te sens-tu?</string>
-    <string name="mitig">Mitigé</string>
-    <string name="satisfait">Satisfait</string>
-    <string name="Epuise">Épuisé</string>
-    <string name="mitige">Mitigé</string>
-    <string name="Satisfait">Satisfait</string>
-    <string name="se_lever_direct">Se lever direct</string>
-    <string name="dormir_15_min_de_plus">Dormir 15 min de plus</string>
-    <string name="ton_r_veil_sonne_quelle_est_ta_r_action">Ton réveil sonne. Quelle est ta réaction ?</string>
-    <string name="jeux_vid_o">Jeux vidéo</string>
-    <string name="lire">Lire</string>
-    <string name="sport">Sport</string>
-    <string name="jeux">Jeux vidéo</string>
-    <string name="Lire">Lire</string>
-    <string name="Sport">Sport</string>
-    <string name="la_journ_e_touche_sa_fin_comment_choisis_tu_de_te_d_tendre">La journée touche à sa fin. Comment choisis-tu de te détendre ?</string>
-    <string name="s_endormir">S\'endormir</string>
-    <string name="lecture_calme">Lecture calme</string>
-    <string name="m_ditation">Méditation</string>
-    <string name="scroll_t_l_phone">Scroll téléphone</string>
-    <string name="tu_te_pr_pares_dormir_quelle_activit_te_semble_la_plus_apaisante">Tu te prépares à dormir. Quelle activité te semble la plus apaisante?</string>
-    <string name="accepter">Accepter</string>
-    <string name="refuser">Refuser</string>
-    <string name="ton_responsable_te_sollicite_pour_une_t_che_impr_vue_quelle_est_ta_r_ponse">Ton responsable te sollicite pour une tâche imprévue. Quelle est ta réponse?</string>
-    <string name="bus">Bus</string>
-    <string name="pied">À pied</string>
-    <string name="voiture">Voiture</string>
-    <string name="tu_dois_te_rendre_ton_activit_du_jour_quel_moyen_de_transport_choisis_tu">Tu dois te rendre à ton activité du jour. Quel moyen de transport choisis-tu?</string>
+    <string name="app_name">Suivant</string>
+    <string name="suivant" translatable="false">Suivant</string>
+    <string name="la_nuit_s_ach_ve_comment_as_tu_dormi" translatable="false">La nuit s’achève… Comment as-tu dormi ?</string>
+    <string name="mal" translatable="false">Mal</string>
+    <string name="insomnie" translatable="false">Insomnie</string>
+    <string name="tr_s_bien" translatable="false">Très bien</string>
+    <string name="quitter_l_application" translatable="false">Quitter l\'application</string>
+    <string name="voici_ton_bilan_de_la_journ_e" translatable="false">Voici ton bilan de la journée !</string>
+    <string name="argent" translatable="false">Argent</string>
+    <string name="bonheur" translatable="false">Bonheur</string>
+    <string name="comp_tences" translatable="false">Compétences</string>
+    <string name="discipline" translatable="false">Discipline</string>
+    <string name="nergie" translatable="false">Énergie</string>
+    <string name="retard" translatable="false">Retard</string>
+    <string name="sant" translatable="false">Santé</string>
+    <string name="stress" translatable="false">Stress</string>
+    <string name="texte_narratif_pour_l_argent" translatable="false">Texte narratif pour l\'argent...</string>
+    <string name="texte_narratif_pour_le_bonheur" translatable="false">Texte narratif pour le bonheur...</string>
+    <string name="texte_narratif_pour_les_comp_tences" translatable="false">Texte narratif pour les compétences...</string>
+    <string name="texte_narratif_pour_la_discipline" translatable="false">Texte narratif pour la discipline...</string>
+    <string name="texte_narratif_pour_l_nergie" translatable="false">Texte narratif pour l\'énergie...</string>
+    <string name="texte_narratif_pour_le_retard" translatable="false">Texte narratif pour le retard...</string>
+    <string name="texte_narratif_pour_la_sant" translatable="false">Texte narratif pour la santé...</string>
+    <string name="texte_narratif_pour_le_stress" translatable="false">Texte narratif pour le stress...</string>
+    <string name="valider" translatable="false">Valider</string>
+    <string name="sortir_au_bar" translatable="false">Sortir au bar</string>
+    <string name="r_viser_travailler" translatable="false">Réviser/Travailler</string>
+    <string name="l_apr_s_midi_commence_quelle_activit_te_semble_la_plus_juste" translatable="false">L\'après-midi commence. Quelle activité te semble la plus juste?</string>
+    <string name="ignorer" translatable="false">Ignorer</string>
+    <string name="linge" translatable="false">Linge</string>
+    <string name="vaisselle" translatable="false">Vaisselle</string>
+    <string name="de_retour_chez_toi_une_t_che_m_nag_re_t_attend_que_fais_tu" translatable="false">De retour chez toi, une tâche ménagère t\'attend. Que fais-tu?</string>
+    <string name="avant_de_dormir_tu_prends_ton_d_ner_que_choisis_tu" translatable="false">Avant de dormir, tu prends ton dîner. Que choisis-tu ?</string>
+    <string name="pas_de_douches" translatable="false">Pas de douches</string>
+    <string name="douche_froide" translatable="false">Douche froide</string>
+    <string name="douche_rapide" translatable="false">Douche rapide</string>
+    <string name="avant_de_commencer_ta_journ_e_tu_te_pr_pares_que_choisis_tu_de_faire" translatable="false">Avant de commencer ta journée, tu te prépares. Que choisis-tu de faire ?</string>
+    <string name="le_ciel_se_couvre_soudainement" translatable="false">Le ciel se couvre soudainement...</string>
+    <string name="avec_des_amis" translatable="false">Avec des amis</string>
+    <string name="fast_food" translatable="false">Fast-food</string>
+    <string name="seul" translatable="false">Seul</string>
+    <string name="c_est_l_heure_du_d_jeuner_avec_qui_choisis_tu_de_manger" translatable="false">C\'est l\'heure du déjeuner. Avec qui choisis-tu de manger?</string>
+    <string name="invitation" translatable="false">Invitation</string>
+    <string name="mauvaise_nouvelle" translatable="false">Mauvaise nouvelle</string>
+    <string name="rien" translatable="false">Rien</string>
+    <string name="une_notification_inattendue_s_affiche_sur_ton_t_l_phone_que_contient_elle" translatable="false">Une notification inattendue s\'affiche sur ton téléphone. Que contient-elle ?</string>
+    <string name="tu_as_un_moment_de_libre_comment_d_cides_tu_de_l_utiliser" translatable="false">Tu as un moment de libre. Comment décides-tu de l\'utiliser?</string>
+    <string name="il_est_temps_de_manger_quelque_chose_que_prends_tu_pour_le_petit_d_jeuner" translatable="false">Il est temps de manger quelque chose. Que prends-tu pour le petit-déjeuner?</string>
+    <string name="puis" translatable="false">Épuisé</string>
+    <string name="en_repensant_ta_journ_e_comment_te_sens_tu" translatable="false">En repensant à ta journée, comment te sens-tu?</string>
+    <string name="mitig" translatable="false">Mitigé</string>
+    <string name="satisfait" translatable="false">Satisfait</string>
+    <string name="Epuise" translatable="false">Épuisé</string>
+    <string name="mitige" translatable="false">Mitigé</string>
+    <string name="Satisfait" translatable="false">Satisfait</string>
+    <string name="se_lever_direct" translatable="false">Se lever direct</string>
+    <string name="dormir_15_min_de_plus" translatable="false">Dormir 15 min de plus</string>
+    <string name="ton_r_veil_sonne_quelle_est_ta_r_action" translatable="false">Ton réveil sonne. Quelle est ta réaction ?</string>
+    <string name="jeux_vid_o" translatable="false">Jeux vidéo</string>
+    <string name="lire" translatable="false">Lire</string>
+    <string name="sport" translatable="false">Sport</string>
+    <string name="jeux" translatable="false">Jeux vidéo</string>
+    <string name="Lire" translatable="false">Lire</string>
+    <string name="Sport" translatable="false">Sport</string>
+    <string name="la_journ_e_touche_sa_fin_comment_choisis_tu_de_te_d_tendre" translatable="false">La journée touche à sa fin. Comment choisis-tu de te détendre ?</string>
+    <string name="s_endormir" translatable="false">S\'endormir</string>
+    <string name="lecture_calme" translatable="false">Lecture calme</string>
+    <string name="m_ditation" translatable="false">Méditation</string>
+    <string name="scroll_t_l_phone" translatable="false">Scroll téléphone</string>
+    <string name="tu_te_pr_pares_dormir_quelle_activit_te_semble_la_plus_apaisante" translatable="false">Tu te prépares à dormir. Quelle activité te semble la plus apaisante?</string>
+    <string name="accepter" translatable="false">Accepter</string>
+    <string name="refuser" translatable="false">Refuser</string>
+    <string name="ton_responsable_te_sollicite_pour_une_t_che_impr_vue_quelle_est_ta_r_ponse" translatable="false">Ton responsable te sollicite pour une tâche imprévue. Quelle est ta réponse?</string>
+    <string name="bus" translatable="false">Bus</string>
+    <string name="pied" translatable="false">À pied</string>
+    <string name="voiture" translatable="false">Voiture</string>
+    <string name="tu_dois_te_rendre_ton_activit_du_jour_quel_moyen_de_transport_choisis_tu" translatable="false">Tu dois te rendre à ton activité du jour. Quel moyen de transport choisis-tu?</string>
 
     <string-array name="petit_dejeuner_options">
         <item>Rien</item>
