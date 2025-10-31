@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="De retour chez toi, une tâche ménagère t'attend. Que fais-tu?"
+        android:text="@string/de_retour_chez_toi_une_t_che_m_nag_re_t_attend_que_fais_tu"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,20 +33,20 @@
             android:id="@+id/cbVaisselle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vaisselle" />
+            android:text="@string/vaisselle" />
 
         <CheckBox
             android:id="@+id/cbLinge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Linge" />
+            android:text="@string/linge" />
 
         <CheckBox
             android:id="@+id/cbIgnorer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Ignorer" />
+            android:text="@string/ignorer" />
 
     </LinearLayout>
 

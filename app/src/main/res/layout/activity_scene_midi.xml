@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="C'est l'heure du déjeuner. Avec qui choisis-tu de manger?"
+        android:text="@string/c_est_l_heure_du_d_jeuner_avec_qui_choisis_tu_de_manger"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,29 +24,32 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Seul"
+        android:text="@string/seul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestionMidi" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionMidi"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/btnAmis"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Avec des amis"
+        android:text="@string/avec_des_amis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSeul" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSeul"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/btnFastFood"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Fast-food"
+        android:text="@string/fast_food"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAmis" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAmis"
+        tools:ignore="VisualLintButtonSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

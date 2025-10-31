@@ -11,7 +11,7 @@
         android:id="@+id/tvQuestionReveil"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Ton réveil sonne. Quelle est ta réaction ?"
+        android:text="@string/ton_r_veil_sonne_quelle_est_ta_r_action"
         android:textSize="20sp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,13 +32,13 @@
             android:id="@+id/rbSnooze"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dormir 15 min de plus" />
+            android:text="@string/dormir_15_min_de_plus" />
 
         <RadioButton
             android:id="@+id/rbGetUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Se lever direct" />
+            android:text="@string/se_lever_direct" />
 
     </RadioGroup>
 

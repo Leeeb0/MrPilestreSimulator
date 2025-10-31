@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="Tu as un moment de libre. Comment décides-tu de l'utiliser?"
+        android:text="@string/tu_as_un_moment_de_libre_comment_d_cides_tu_de_l_utiliser"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

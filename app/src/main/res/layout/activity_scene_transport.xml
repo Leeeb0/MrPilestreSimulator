@@ -11,7 +11,7 @@
         android:id="@+id/tvQuestionTransport"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Tu dois te rendre à ton activité du jour. Quel moyen de transport choisis-tu?"
+        android:text="@string/tu_dois_te_rendre_ton_activit_du_jour_quel_moyen_de_transport_choisis_tu"
         android:textSize="20sp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,19 +32,19 @@
             android:id="@+id/rbPied"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="À pied" />
+            android:text="@string/pied" />
 
         <RadioButton
             android:id="@+id/rbBus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bus" />
+            android:text="@string/bus" />
 
         <RadioButton
             android:id="@+id/rbVoiture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Voiture" />
+            android:text="@string/voiture" />
 
     </RadioGroup>
 

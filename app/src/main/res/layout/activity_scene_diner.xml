@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="Avant de dormir, tu prends ton dîner. Que choisis-tu ?"
+        android:text="@string/avant_de_dormir_tu_prends_ton_d_ner_que_choisis_tu"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

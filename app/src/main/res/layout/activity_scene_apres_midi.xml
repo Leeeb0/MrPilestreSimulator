@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="L'après-midi commence. Quelle activité te semble la plus juste?"
+        android:text="@string/l_apr_s_midi_commence_quelle_activit_te_semble_la_plus_juste"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         android:id="@+id/tvLabelTravailler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Réviser/Travailler"
+        android:text="@string/r_viser_travailler"
         app:layout_constraintStart_toStartOf="@+id/seekBarApresMidi"
         app:layout_constraintTop_toBottomOf="@+id/seekBarApresMidi"
         android:layout_marginTop="8dp"/>
@@ -44,7 +44,7 @@
         android:id="@+id/tvLabelSortir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sortir au bar"
+        android:text="@string/sortir_au_bar"
         app:layout_constraintEnd_toEndOf="@+id/seekBarApresMidi"
         app:layout_constraintTop_toBottomOf="@+id/seekBarApresMidi"
         android:layout_marginTop="8dp"/>
@@ -53,7 +53,7 @@
         android:id="@+id/btnNextSceneApresMidi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valider"
+        android:text="@string/valider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="32dp"/>

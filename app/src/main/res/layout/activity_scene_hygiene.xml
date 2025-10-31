@@ -11,7 +11,7 @@
         android:id="@+id/tvQuestionHygiene"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Avant de commencer ta journée, tu te prépares. Que choisis-tu de faire ?"
+        android:text="@string/avant_de_commencer_ta_journ_e_tu_te_pr_pares_que_choisis_tu_de_faire"
         android:textSize="20sp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,19 +32,19 @@
             android:id="@+id/rbShowerFast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Douche rapide" />
+            android:text="@string/douche_rapide" />
 
         <RadioButton
             android:id="@+id/rbShowerCold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Douche froide" />
+            android:text="@string/douche_froide" />
 
         <RadioButton
             android:id="@+id/rbNoShower"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pas de douches" />
+            android:text="@string/pas_de_douches" />
 
     </RadioGroup>
 

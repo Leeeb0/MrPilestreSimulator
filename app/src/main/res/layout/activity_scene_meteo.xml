@@ -11,7 +11,7 @@
         android:id="@+id/tvDescriptionMeteo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Le ciel se couvre soudainement..."
+        android:text="@string/le_ciel_se_couvre_soudainement"
         android:textSize="20sp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"

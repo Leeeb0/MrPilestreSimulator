@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="Il est temps de manger quelque chose. Que prends-tu pour le petit-déjeuner?"
+        android:text="@string/il_est_temps_de_manger_quelque_chose_que_prends_tu_pour_le_petit_d_jeuner"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

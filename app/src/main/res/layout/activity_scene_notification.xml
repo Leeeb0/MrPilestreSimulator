@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="Une notification inattendue s'affiche sur ton téléphone. Que contient-elle ?"
+        android:text="@string/une_notification_inattendue_s_affiche_sur_ton_t_l_phone_que_contient_elle"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,15 +23,16 @@
         android:id="@+id/btnInvitation"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:contentDescription="Invitation"
+        android:contentDescription="@string/invitation"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_dialog_email"
-        app:layout_constraintVertical_bias="0.4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnMauvaiseNouvelle"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestionNotification" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionNotification"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvLabelInvitation"
@@ -49,13 +50,14 @@
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:contentDescription="Mauvaise nouvelle"
+        android:contentDescription="@string/mauvaise_nouvelle"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_dialog_alert"
         app:layout_constraintBottom_toBottomOf="@+id/btnInvitation"
         app:layout_constraintEnd_toStartOf="@+id/btnRien"
         app:layout_constraintStart_toEndOf="@+id/btnInvitation"
-        app:layout_constraintTop_toTopOf="@+id/btnInvitation" />
+        app:layout_constraintTop_toTopOf="@+id/btnInvitation"
+        app:srcCompat="@android:drawable/ic_dialog_alert"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvLabelMauvaiseNouvelle"
@@ -71,13 +73,14 @@
         android:id="@+id/btnRien"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:contentDescription="Rien"
+        android:contentDescription="@string/rien"
         android:scaleType="fitCenter"
-        app:srcCompat="@android:drawable/ic_media_pause"
         app:layout_constraintBottom_toBottomOf="@+id/btnInvitation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnMauvaiseNouvelle"
-        app:layout_constraintTop_toTopOf="@+id/btnInvitation" />
+        app:layout_constraintTop_toTopOf="@+id/btnInvitation"
+        app:srcCompat="@android:drawable/ic_media_pause"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvLabelRien"

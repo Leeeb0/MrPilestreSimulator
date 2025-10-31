@@ -11,7 +11,7 @@
         android:id="@+id/tvQuestionSommeil"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Tu te prépares à dormir. Quelle activité te semble la plus apaisante?"
+        android:text="@string/tu_te_pr_pares_dormir_quelle_activit_te_semble_la_plus_apaisante"
         android:textSize="20sp"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,19 +32,19 @@
             android:id="@+id/rbScroll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Scroll téléphone" />
+            android:text="@string/scroll_t_l_phone" />
 
         <RadioButton
             android:id="@+id/rbLecture"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lecture calme" />
+            android:text="@string/lecture_calme" />
 
         <RadioButton
             android:id="@+id/rbMeditation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Méditation" />
+            android:text="@string/m_ditation" />
 
     </RadioGroup>
 
@@ -52,7 +52,7 @@
         android:id="@+id/btnNextSceneSommeil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="S'endormir"
+        android:text="@string/s_endormir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="32dp"/>

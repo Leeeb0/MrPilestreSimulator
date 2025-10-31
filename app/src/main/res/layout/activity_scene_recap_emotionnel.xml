@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:gravity="center"
-        android:text="En repensant à ta journée, comment te sens-tu?"
+        android:text="@string/en_repensant_ta_journ_e_comment_te_sens_tu"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,23 +23,24 @@
         android:id="@+id/btnSatisfait"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:contentDescription="Satisfait"
+        android:contentDescription="@string/satisfait"
         android:scaleType="fitCenter"
 
-        app:srcCompat="@android:drawable/btn_star_big_on"
-
-        app:layout_constraintVertical_bias="0.4"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toStartOf="@+id/btnMitige"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestionRecap" />
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionRecap"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvLabelSatisfait"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Satisfait"
+        android:text="@string/Satisfait"
         app:layout_constraintTop_toBottomOf="@+id/btnSatisfait"
         app:layout_constraintStart_toStartOf="@+id/btnSatisfait"
         app:layout_constraintEnd_toEndOf="@+id/btnSatisfait"
@@ -51,21 +52,22 @@
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:contentDescription="Mitigé"
+        android:contentDescription="@string/mitig"
         android:scaleType="fitCenter"
 
-        app:srcCompat="@android:drawable/ic_menu_help"
-
         app:layout_constraintBottom_toBottomOf="@+id/btnSatisfait"
+
         app:layout_constraintEnd_toStartOf="@+id/btnEpuise"
         app:layout_constraintStart_toEndOf="@+id/btnSatisfait"
-        app:layout_constraintTop_toTopOf="@+id/btnSatisfait" />
+        app:layout_constraintTop_toTopOf="@+id/btnSatisfait"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvLabelMitige"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mitigé"
+        android:text="@string/mitige"
         app:layout_constraintTop_toBottomOf="@+id/btnMitige"
         app:layout_constraintStart_toStartOf="@+id/btnMitige"
         app:layout_constraintEnd_toEndOf="@+id/btnMitige"
@@ -75,21 +77,22 @@
         android:id="@+id/btnEpuise"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:contentDescription="Épuisé"
+        android:contentDescription="@string/puis"
         android:scaleType="fitCenter"
 
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
-
         app:layout_constraintBottom_toBottomOf="@+id/btnSatisfait"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnMitige"
-        app:layout_constraintTop_toTopOf="@+id/btnSatisfait" />
+        app:layout_constraintTop_toTopOf="@+id/btnSatisfait"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/tvLabelEpuise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Épuisé"
+        android:text="@string/Epuise"
         app:layout_constraintTop_toBottomOf="@+id/btnEpuise"
         app:layout_constraintStart_toStartOf="@+id/btnEpuise"
         app:layout_constraintEnd_toEndOf="@+id/btnEpuise"
